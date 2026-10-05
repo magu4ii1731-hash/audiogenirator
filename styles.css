@@ -1,0 +1,33 @@
+### Шаг 2. Полный код для файла `styles.css`
+Полностью очистите файл `styles.css` на вашем репозитории GitHub и вставьте этот стильный адаптивный код:
+
+```css
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+body { background: #f1f5f9; color: #0f172a; padding: 40px 20px; display: flex; justify-content: center; }
+.container { background: #ffffff; width: 100%; max-width: 680px; padding: 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); }
+header { text-align: center; margin-bottom: 25px; }
+header h1 { color: #1e293b; font-size: 24px; margin-bottom: 6px; }
+header p { color: #64748b; font-size: 14px; }
+.form-group { margin-bottom: 20px; }
+.form-group label { display: block; margin-bottom: 8px; font-weight: 600; color: #334155; font-size: 14px; }
+textarea { width: 100%; height: 180px; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px; resize: vertical; font-size: 15px; outline: none; line-height: 1.5; }
+textarea:focus { border-color: #2563eb; box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15); }
+.settings-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 25px; background: #f8fafc; padding: 16px; border-radius: 8px; }
+@media (max-width: 500px) { .settings-grid { grid-template-columns: 1fr; } }
+.field label { display: block; margin-bottom: 6px; font-size: 13px; font-weight: 600; color: #475569; }
+select { width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; background-color: #fff; font-size: 14px; color: #1e293b; outline: none; }
+button { width: 100%; background: #2563eb; color: #ffffff; border: none; padding: 14px; font-size: 16px; font-weight: 600; border-radius: 6px; cursor: pointer; transition: background 0.2s; }
+button:hover { background: #1d4ed8; }
+button:disabled { background: #94a3b8; cursor: not-allowed; }
+.loader-box { display: flex; align-items: center; justify-content: center; gap: 12px; margin-top: 20px; background: #eff6ff; padding: 14px; border-radius: 6px; border: 1px solid #bfdbfe; }
+.loader-box p { font-size: 14px; color: #1e40af; font-weight: 500; }
+.spinner { width: 20px; height: 20px; border: 2.5px solid #dbeafe; border-top: 2.5px solid #2563eb; border-radius: 50%; animation: spin 0.8s linear infinite; }
+@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+.results-box { margin-top: 30px; padding-top: 20px; border-top: 1px solid #e2e8f0; }
+.results-box h2 { font-size: 16px; color: #0f172a; margin-bottom: 16px; }
+.chapter-card { display: flex; flex-direction: column; background: #f8fafc; padding: 16px; border-radius: 8px; margin-bottom: 12px; border: 1px solid #e2e8f0; gap: 10px; }
+.chapter-card.error { background: #fef2f2; border-color: #fca5a5; color: #991b1b; font-size: 14px; }
+.card-title { font-weight: 600; color: #334155; font-size: 14px; }
+audio { width: 100%; height: 40px; }
+.btn-download { text-align: center; background: #10b981; color: white; text-decoration: none; padding: 8px; font-weight: 600; border-radius: 4px; font-size: 13px; transition: background 0.2s; }
+.btn-download:hover { background: #059669; }
